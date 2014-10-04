@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface Wizard : CCNode
-
+@property (nonatomic, assign) BOOL spellRight;
+@property (nonatomic, assign) BOOL spellWrong;
 @end

@@ -12,6 +12,8 @@
 {
     CCNode *_contentNode;
     CCTextField *_spellingbox;
+    Wizard *player;
+    
 }
 
 -(void) didLoadFromCCB
@@ -35,18 +37,35 @@
 //
 //}
 
+
+-(void)update:(CCTime)delta
+{
+    if (player.spellRight)
+    {
+      //move forward
+        
+    }
+    else
+    {
+     //move back and pause
+    
+    }
+
+
+}
 -(void) spawnWizard;
 {
    
-    Wizard *newPlayer = (Wizard *) [CCBReader load:@"Wizard"];
+    Wizard *player = (Wizard *) [CCBReader load:@"Wizard"];
 
-    newPlayer.position=ccp([[CCDirector sharedDirector] viewSize].width/2,
+    player.position=ccp([[CCDirector sharedDirector] viewSize].width/2,
                            [[CCDirector sharedDirector] viewSize].height/2);
     //places player in the middle
 
-    [_contentNode addChild:newPlayer];
+    [_contentNode addChild:player];
 
 }
+
 
 
 
