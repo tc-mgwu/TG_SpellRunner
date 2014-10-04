@@ -1,13 +1,13 @@
 //
-//  Gameplay.h
+//  Wizard.m
 //  SpellRunner
 //
-//  Created by Toni Chen on 9/12/14.
+//  Created by Toni Chen on 10/3/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCNode.h"
 #import "Wizard.h"
-@interface Gameplay : CCNode
+
+@implementation Wizard
 
 @end
