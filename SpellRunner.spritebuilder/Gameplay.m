@@ -14,6 +14,8 @@
     CCTextField *_spellingbox;
     Wizard *player;
     
+    NSString *word;
+    
 }
 
 -(void) didLoadFromCCB
@@ -51,12 +53,18 @@
     
     }
 
+}
+
+-(void) giveWord
+{
+    //give player word
+//    str = [NSString stringWithFormat:@"%d",xNumber];
 
 }
+
 -(void) spawnWizard;
 {
-   
-    Wizard *player = (Wizard *) [CCBReader load:@"Wizard"];
+    player = (Wizard *) [CCBReader load:@"Wizard"];
 
     player.position=ccp([[CCDirector sharedDirector] viewSize].width/2,
                            [[CCDirector sharedDirector] viewSize].height/2);
