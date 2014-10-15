@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		A551F7C019EE0AFB005C8199 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A551F7BF19EE0AFB005C8199 /* Level.m */; };
 		A5AC1B7119C3B9610011CD4D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AC1B7019C3B9610011CD4D /* Gameplay.m */; };
 		A5B2691B19EB91410075CFA2 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B2691A19EB91410075CFA2 /* Property List.plist */; };
 		A5FAE54019DF756600924BCC /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FAE53F19DF756600924BCC /* Wizard.m */; };
@@ -60,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A551F7BE19EE0AFB005C8199 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		A551F7BF19EE0AFB005C8199 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		A5AC1B6F19C3B9610011CD4D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		A5AC1B7019C3B9610011CD4D /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		A5B2691A19EB91410075CFA2 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				A551F7BE19EE0AFB005C8199 /* Level.h */,
+				A551F7BF19EE0AFB005C8199 /* Level.m */,
 				A5AC1B6F19C3B9610011CD4D /* Gameplay.h */,
 				A5AC1B7019C3B9610011CD4D /* Gameplay.m */,
 				A5FAE53E19DF756600924BCC /* Wizard.h */,
@@ -354,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A551F7C019EE0AFB005C8199 /* Level.m in Sources */,
 				A5FAE54019DF756600924BCC /* Wizard.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				A5AC1B7119C3B9610011CD4D /* Gameplay.m in Sources */,
