@@ -31,7 +31,7 @@
     [super onEnter];
 
     Level* level1 = [Level levelWithNum:1];
-//    NSLog(@"words: %@", level1.words);
+    NSLog(@"words: %@", level1.words);
     [self spawnWizard];
     
 }
@@ -45,20 +45,20 @@
 //}
 
 
--(void)update:(CCTime)delta
-{
-    if (player.spellRight)
-    {
-      //move forward
-        
-    }
-    else
-    {
-     //move back and pause
-    
-    }
-
-}
+//-(void)update:(CCTime)delta
+//{
+//    if (player.spellRight)
+//    {
+//      //move forward
+//        
+//    }
+//    else
+//    {
+//     //move back and pause
+//    
+//    }
+//
+//}
 
 //-(void) giveWord
 //{
