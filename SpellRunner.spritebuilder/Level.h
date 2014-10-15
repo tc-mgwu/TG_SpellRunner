@@ -14,5 +14,5 @@
 
 @property (assign, nonatomic) int pointsPerWord;
 @property (assign, nonatomic) int timeToSpell;
-@property (strong, nonatomic) NSArray* anagrams;
+@property (strong, nonatomic) NSArray* words;
 @end
