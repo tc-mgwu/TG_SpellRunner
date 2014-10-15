@@ -8,6 +8,8 @@
 
 #import "Gameplay.h"
 #import "Wizard.h"
+#import "Level.h"
+
 @implementation Gameplay
 {
     CCNode *_contentNode;
@@ -28,7 +30,10 @@
 {
     [super onEnter];
 
+    Level* level1 = [Level levelWithNum:1];
+//    NSLog(@"words: %@", level1.words);
     [self spawnWizard];
+    
 }
     //
 //-(void) onEnter
@@ -55,12 +60,12 @@
 
 }
 
--(void) giveWord
-{
-    //give player word
-//    str = [NSString stringWithFormat:@"%d",xNumber];
-
-}
+//-(void) giveWord
+//{
+//    //give player word
+////    str = [NSString stringWithFormat:@"%d",xNumber];
+//
+//}
 
 -(void) spawnWizard;
 {

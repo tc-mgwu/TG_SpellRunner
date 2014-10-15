@@ -15,4 +15,8 @@
 @property (assign, nonatomic) int pointsPerWord;
 @property (assign, nonatomic) int timeToSpell;
 @property (strong, nonatomic) NSArray* words;
+
+//factory method to load a .plist file and initialize the model
++(instancetype)levelWithNum:(int)levelNum;
+
 @end
