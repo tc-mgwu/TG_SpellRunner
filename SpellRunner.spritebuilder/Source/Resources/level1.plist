@@ -10,5 +10,9 @@
 		<string>conceit</string>
 		<string>opposite</string>
 	</array>
+	<key>pointsPerWord</key>
+	<integer>0</integer>
+	<key>timeToSpell</key>
+	<integer>0</integer>
 </dict>
 </plist>
