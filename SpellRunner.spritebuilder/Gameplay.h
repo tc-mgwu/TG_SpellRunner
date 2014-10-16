@@ -8,7 +8,8 @@
 
 #import "CCNode.h"
 #import "Wizard.h"
-
+#import "Level.h"
 @interface Gameplay : CCNode
+
 
 @end

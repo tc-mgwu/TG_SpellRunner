@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		A5421D7119EF710C001025D5 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5421D7019EF710C001025D5 /* GameController.m */; };
 		A551F7C019EE0AFB005C8199 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A551F7BF19EE0AFB005C8199 /* Level.m */; };
 		A5AC1B7119C3B9610011CD4D /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AC1B7019C3B9610011CD4D /* Gameplay.m */; };
 		A5B2691B19EB91410075CFA2 /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B2691A19EB91410075CFA2 /* level1.plist */; };
@@ -61,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A5421D6F19EF710C001025D5 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = Source/Resources/GameController.h; sourceTree = "<group>"; };
+		A5421D7019EF710C001025D5 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameController.m; path = Source/Resources/GameController.m; sourceTree = "<group>"; };
 		A551F7BE19EE0AFB005C8199 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		A551F7BF19EE0AFB005C8199 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		A5AC1B6F19C3B9610011CD4D /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				A5421D6F19EF710C001025D5 /* GameController.h */,
+				A5421D7019EF710C001025D5 /* GameController.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				A551F7BE19EE0AFB005C8199 /* Level.h */,
@@ -363,6 +368,7 @@
 				A5FAE54019DF756600924BCC /* Wizard.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				A5AC1B7119C3B9610011CD4D /* Gameplay.m in Sources */,
+				A5421D7119EF710C001025D5 /* GameController.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);

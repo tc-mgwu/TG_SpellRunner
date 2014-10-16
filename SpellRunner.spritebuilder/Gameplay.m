@@ -34,6 +34,7 @@
     NSLog(@"words: %@", level1.words);
     [self spawnWizard];
     
+        
 }
     //
 //-(void) onEnter
@@ -45,27 +46,6 @@
 //}
 
 
-//-(void)update:(CCTime)delta
-//{
-//    if (player.spellRight)
-//    {
-//      //move forward
-//        
-//    }
-//    else
-//    {
-//     //move back and pause
-//    
-//    }
-//
-//}
-
-//-(void) giveWord
-//{
-//    //give player word
-////    str = [NSString stringWithFormat:@"%d",xNumber];
-//
-//}
 
 -(void) spawnWizard;
 {
