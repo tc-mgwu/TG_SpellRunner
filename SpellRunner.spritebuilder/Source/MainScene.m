@@ -11,9 +11,9 @@
 @implementation MainScene
 -(void) play
 {
-    CCScene *gameColorMatch = [CCBReader loadAsScene:@"Gameplay"];
+    CCScene *gameplay = [CCBReader loadAsScene:@"Gameplay"];
     CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
-    [[CCDirector sharedDirector] presentScene:gameColorMatch withTransition:transition];
+    [[CCDirector sharedDirector] presentScene:gameplay withTransition:transition];
     
 }
 @end

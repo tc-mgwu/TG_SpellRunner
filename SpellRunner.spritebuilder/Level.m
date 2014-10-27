@@ -19,24 +19,21 @@
                            stringByAppendingPathComponent:fileName];
     
     //load .plist file
-    NSDictionary* levelDict = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+//    NSDictionary* levelDict = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+     NSDictionary* levelDict = [[NSDictionary alloc]initWithContentsOfFile:levelPath];
     
     //validate
     NSAssert(levelDict, @"level config file not found");
     
     //create Level instance
-    Level* l =[[Level alloc] init];
+    Level* levelpicked =[[Level alloc] init];
     
     //initialize the object from the dictionary
-    l.pointsPerWord = [levelDict[@"pointsPerWord"] intValue];
-    l.words = levelDict[@"words"];
-    l.timeToSpell = [levelDict[@"timeToSpell"] intValue];
+    levelpicked.pointsPerWord = [levelDict[@"pointsPerWord"] intValue];
+    levelpicked.words = levelDict[@"words"];
+    levelpicked.timeToSpell = [levelDict[@"timeToSpell"] intValue];
     
-    return l;
+    return levelpicked;
     
-
-
-
-
 }
 @end
