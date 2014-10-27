@@ -18,6 +18,8 @@
     
     NSString *word;
     
+    CCTextField *_spellingBox;
+    CCLabelTTF *_label;
 }
 
 
@@ -34,10 +36,14 @@
 
     //defines what level property to load.
     Level* level1 = [Level levelWithNum:1];
+    
+    //assign self.level
     self.level= level1;
+    
+    
     NSLog(@"words: %@", level1.words);
     [self spawnWizard];
-    [self dealRandomWord]; //this little crap doesn't work.
+    [self dealRandomWord];
 }
 
 -(void)dealRandomWord
@@ -51,7 +57,7 @@
     
     //3 store word1
     NSString* word1 = wordSpell;
-    //strings aren't arrays, don't add index
+   
     
     //4 store number of characters in each word into word1Length
     int word1Length = [word1 length];
@@ -59,6 +65,8 @@
     //5 print word in console
     NSLog(@"phrase1[%i]: %@", word1Length, word1);
     
+    //6 set label (with property string) to the word (nsstring)
+    _label.string= wordSpell;
 }
 
 

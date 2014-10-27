@@ -16,6 +16,6 @@
 
 //The Level object that stores the anagrams and other settings for the current game level.
 @property (strong, nonatomic) Level* level;
-
+@property CCTextField* spellingBox;
 
 @end
