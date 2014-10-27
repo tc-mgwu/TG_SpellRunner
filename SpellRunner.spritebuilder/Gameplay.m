@@ -34,7 +34,7 @@
 
     //defines what level property to load.
     Level* level1 = [Level levelWithNum:1];
-   
+    self.level= level1;
     NSLog(@"words: %@", level1.words);
     [self spawnWizard];
     [self dealRandomWord]; //this little crap doesn't work.
@@ -47,10 +47,11 @@
     
     //2 random word is generated from word list- then grabbed at this index
     int randomIndex = arc4random()%[self.level.words count];
-    NSArray* wordSpell = self.level.words[ randomIndex ];
+    NSString* wordSpell = self.level.words[ randomIndex ];
     
     //3 store word1
-    NSString* word1 = wordSpell[0];
+    NSString* word1 = wordSpell;
+    //strings aren't arrays, don't add index
     
     //4 store number of characters in each word into word1Length
     int word1Length = [word1 length];
