@@ -307,7 +307,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string></string>
+							<string>buttonText:</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -363,6 +363,8 @@
 						<integer>17</integer>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -868,8 +870,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

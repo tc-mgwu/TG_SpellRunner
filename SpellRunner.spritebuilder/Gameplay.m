@@ -18,7 +18,7 @@
     
     NSString *word;
     
-    CCTextField *_spellingBox;
+//    CCTextField *_spellingBox;
     CCLabelTTF *_label;
 }
 
@@ -70,9 +70,17 @@
 }
 
 
+-(void) update:(CCTime)delta
+{
+    //when user pushes return
 
 
+}
 
+- (void)buttonText:(CCTextField*)_spellingbox
+{
+    CCLOG(@"%@",_spellingbox.string);
+}
 -(void) spawnWizard;
 {
     player = (Wizard *) [CCBReader load:@"Wizard"];
