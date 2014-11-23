@@ -13,20 +13,20 @@
 @implementation Gameplay
 {
     CCNode *_contentNode;
-    CCTextField *_spellingbox;
+    CCTextField *_spellingBox;
     Wizard *player;
     
     NSString *word;
-    
-//    CCTextField *_spellingBox;
+//    
+
     CCLabelTTF *_label;
+    NSString *curWord;
 }
 
 
 -(void) didLoadFromCCB
 {
     self.userInteractionEnabled=TRUE;
-    
 }
 
 
@@ -67,6 +67,7 @@
     
     //6 set label (with property string) to the word (nsstring)
     _label.string= wordSpell;
+    curWord= wordSpell;
 }
 
 
@@ -77,10 +78,19 @@
 
 }
 
-- (void)buttonText:(CCTextField*)_spellingbox
+- (void)buttonText:(CCTextField*)_userspellingbox
 {
-    CCLOG(@"%@",_spellingbox.string);
+    CCLOG(@"%@",_userspellingbox.string);
+    if ([_userspellingbox.string isEqualToString:curWord])
+    {
+        CCLOG(@"YAY, right answer");
+        _userspellingbox.string = @"";
+        
+    }
 }
+
+
+
 -(void) spawnWizard;
 {
     player = (Wizard *) [CCBReader load:@"Wizard"];

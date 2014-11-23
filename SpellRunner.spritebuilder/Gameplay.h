@@ -11,7 +11,7 @@
 #import "Level.h"
 #import <Foundation/Foundation.h>
 
-@interface Gameplay : CCNode
+@interface Gameplay : CCNode 
 
 
 //The Level object that stores the anagrams and other settings for the current game level.
